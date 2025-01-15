@@ -657,16 +657,16 @@ sealed trait ZPure[+W, -S1, +S2, -R, +E, +A] { self =>
             ZPure.Fold(
               zPure.value,
               (cause: Cause[Any]) =>
-                ZPure.suspend(Succeed({
+                ZPure.suspend(Succeed {
                   val clear   = clearLogOnError
                   val builder = logs.pop()
                   if (!clear) logs.peek() ++= builder.result()
-                })) *> ZPure.set(state) *> zPure.failure(cause),
+                }) *> ZPure.set(state) *> zPure.failure(cause),
               (a: Any) =>
-                ZPure.suspend(Succeed({
+                ZPure.suspend(Succeed {
                   val builder = logs.pop()
                   logs.peek() ++= builder.result()
-                })) *> zPure.success(a)
+                }) *> zPure.success(a)
             )
           stack.push(fold)
           logs.push(ChunkBuilder.make())
