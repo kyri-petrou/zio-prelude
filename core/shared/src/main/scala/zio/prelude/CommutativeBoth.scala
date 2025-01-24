@@ -599,9 +599,32 @@ object CommutativeBoth {
   /**
    * Combines 20 `F` values using the provided function `f` in parallel.
    */
-  def mapN[F[
-    +_
-  ]: CommutativeBoth: Covariant, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, B](
+  def mapN[
+    F[
+      +_
+    ]: CommutativeBoth: Covariant,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19,
+    B
+  ](
     a0: F[A0],
     a1: F[A1],
     a2: F[A2],
@@ -645,9 +668,33 @@ object CommutativeBoth {
   /**
    * Combines 21 `F` values using the provided function `f` in parallel.
    */
-  def mapN[F[
-    +_
-  ]: CommutativeBoth: Covariant, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, B](
+  def mapN[
+    F[
+      +_
+    ]: CommutativeBoth: Covariant,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19,
+    A20,
+    B
+  ](
     a0: F[A0],
     a1: F[A1],
     a2: F[A2],
@@ -695,9 +742,34 @@ object CommutativeBoth {
   /**
    * Combines 22 `F` values using the provided function `f` in parallel.
    */
-  def mapN[F[
-    +_
-  ]: CommutativeBoth: Covariant, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, B](
+  def mapN[
+    F[
+      +_
+    ]: CommutativeBoth: Covariant,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19,
+    A20,
+    A21,
+    B
+  ](
     a0: F[A0],
     a1: F[A1],
     a2: F[A2],
@@ -1085,9 +1157,31 @@ object CommutativeBoth {
   /**
    * Combines 20 `F` values into a tuple in a parallel manner.
    */
-  def tupleN[F[
-    +_
-  ]: CommutativeBoth: Covariant, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19](
+  def tupleN[
+    F[
+      +_
+    ]: CommutativeBoth: Covariant,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19
+  ](
     a0: F[A0],
     a1: F[A1],
     a2: F[A2],
@@ -1116,9 +1210,32 @@ object CommutativeBoth {
   /**
    * Combines 21 `F` values into a tuple in a parallel manner.
    */
-  def tupleN[F[
-    +_
-  ]: CommutativeBoth: Covariant, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20](
+  def tupleN[
+    F[
+      +_
+    ]: CommutativeBoth: Covariant,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19,
+    A20
+  ](
     a0: F[A0],
     a1: F[A1],
     a2: F[A2],
@@ -1148,9 +1265,33 @@ object CommutativeBoth {
   /**
    * Combines 22 `F` values into a tuple in a parallel manner.
    */
-  def tupleN[F[
-    +_
-  ]: CommutativeBoth: Covariant, A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21](
+  def tupleN[
+    F[
+      +_
+    ]: CommutativeBoth: Covariant,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19,
+    A20,
+    A21
+  ](
     a0: F[A0],
     a1: F[A1],
     a2: F[A2],
